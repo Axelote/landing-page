@@ -1,0 +1,44 @@
+@import "colors.scss";
+
+.btn {
+
+    &:focus {
+        box-shadow: none;
+    }
+    &-outline {
+        border-radius: 20px;
+    
+        &_white {
+            color: $color-white;
+            border: 1px solid $color-white;
+    
+            &:hover {
+                color: $color-blue;
+                border: 1px solid $color-blue;
+            }
+        }
+        &_blue {
+            color: $color-blue;
+            border: 1px solid $color-blue;
+    
+            &:hover {
+                background-color: $color-blue;
+                color: $color-white;
+            }
+        }
+    }
+    &-filled {
+        border-radius: 35px;
+    
+        &_blue {
+            background-color: $color-blue;
+            color: $color-white;
+    
+            &:hover {
+                background-color: $color-white;
+                border: 1px solid $color-blue;
+                color: $color-blue;
+            }
+        }
+    }
+}

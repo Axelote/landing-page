@@ -1,0 +1,39 @@
+@import "colors.scss";
+
+h1,
+h2,
+h3 {
+    font-family: 'PT Serif', serif;
+}
+.section {
+
+    &-title {
+        margin-bottom: 30px;
+        font-size: 54px;
+        color: $color-violet;
+        text-transform: capitalize;
+
+        @media screen and (max-width: 991px) {
+            font-size: 34px;
+            line-height: 44px;
+        }
+    }
+    &-description {
+        font-size: 28px;
+        line-height: 38px;
+
+        @media screen and (max-width: 991px) {
+            font-size: 20px;
+            line-height: 30px;
+        }
+    }
+}
+.link {
+    color: $color-blue;
+    transition: all .2s linear;
+
+    &:hover {
+        color: $color-white;
+        text-decoration-color: $color-blue;
+    }
+}
